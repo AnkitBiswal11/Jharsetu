@@ -217,3 +217,49 @@ Content-Type: application/json
   "dialect": "Sadri"
 }
 Response (200 OK - ~380ms Latency):
+
+{
+  "status": "TRIAGED",
+  "inference_latency_ms": 378,
+  "ieee_problem_statement": "Autonomous Field-Scale Fluoride and Iron Filtration Unit for Rural Groundwater Supplies",
+  "technical_domain": "Hydrology & Environmental Remediation",
+  "urgency_rank": "HIGH",
+  "target_kpi": "Reduce fluoride/iron ppm to WHO potable standards without continuous grid power",
+  "inpass_novelty_score": 0.87,
+  "mapped_ipc_classes": ["C02F 1/00", "B01D 35/00"]
+}
+
+3. Dual-Key Escrow Milestone Authorization
+POST /api/v1/escrow/authorize-release
+Authorization: Bearer <jwt_token>
+Content-Type: application/json
+
+{
+  "project_id": "JH-2026-CAP-0482",
+  "milestone_index": 2,
+  "tranche_amount_inr": 150000,
+  "bdo_admin_key_hash": "a4f8...c1e9",
+  "faculty_mentor_key_hash": "f2d3...e8a2",
+  "field_inspection_media_ref": "supabase://audit-media/inspection_milestone_2.mp4"
+}
+
+🏛️ Statutory & Policy Frameworks
+JharSetu is designed to fulfill statutory and institutional compliance mandates:
+
+National Education Policy (NEP) 2020: Directly conforms to UGC/AICTE community engagement standards (NHEQF Level 7). Capstone defense automatically mints 6.0 Experiential Learning Credits to the national Academic Bank of Credits (ABC) / DigiLocker ecosystem.
+
+Companies Act 2013 (Section 135 / Schedule VII): Provides complete statutory escrow custody for Corporate Social Responsibility (CSR) allocations toward university technology incubators, rural infrastructure, and clean water engineering.
+
+Intellectual Property India (CGPDTM): Connects to the Indian Patent Advanced Search System (InPASS) to ensure student engineering outputs are checked against prior art and WIPO International Patent Classification (IPC) standards.
+
+Survey of India Cadastral Geospatial Norms: Incorporates standardized WGS84 GeoJSON multi-polygons across all 24 administrative districts of Jharkhand.
+
+👥 Authors & Acknowledgments
+Team: [Your Registered Team Name]
+
+Event: Smart India Hackathon (SIH) 2026
+
+Problem Statement: Rural Infrastructure Telemetry, Vernacular Civic Ingestion & Capstone R&D Escrow
+
+📄 License
+This repository is distributed under the terms of the MIT License.
