@@ -4,3 +4,4 @@ mysql-connector-python
 groq
 python-dotenv
 pydantic
+python-multipart
